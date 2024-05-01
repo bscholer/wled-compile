@@ -1,0 +1,3 @@
+[env:custom_build]
+extends = env:esp32_4MB_S
+build_flags = ${env:esp32_4MB_S.build_flags} ${common.debug_flags} -D SR_DEBUG -D MIC_LOGGER
